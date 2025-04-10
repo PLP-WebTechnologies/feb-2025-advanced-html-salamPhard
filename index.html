@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="learn advanced html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Advanced Html</title>
+    <style>
+        table, th, td{
+        border: 2px solid black;
+        }
+
+        thead{
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit;}
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class ="navbar-brand" href="#">LEARN-HTML-ADV</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class ="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class ="nav-link" href="#olist">Ordered List</a>
+            </li>
+            <li class="nav-item ">
+                <a class ="nav-link" href="#ext_img">External Image</a>
+            </li>
+            <li class="nav-item">
+                <a class ="nav-link" href="#table">Table</a>
+            </li>
+            <li class="nav-item ">
+                <a class ="nav-link" href="#regform">Registration Form</a>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+<div class="container">
+  <div class="jumbotron">
+    <h1>This is Bootstrap Jumbotron</h1>
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+    responsive, mobile-first projects on the web.</p>
+  </div>
+    <!--Start section ordered list-->
+    <section id="olist">
+        <h5>LEARN HOW TO MAKE ORDERED LIST</h5>
+        <ol type="i">
+            <li>Create the list ol </li>
+            <li>Make type of ol to be small letter i </li>
+            <li>Enter the li to list what your desired</li>
+            <li>You are good to go</li>
+        </ol>
+    </section>
+    <br>
+     <!--End section ordered list-->
+
+     <!--Start section image-->
+    <section id="ext-img">
+        <h5>LEARN HOW TO INSERT IMAGES</h5>
+        <img src="https://images.pexels.com/photos/31414585/pexels-photo-31414585/free-photo-of-red-panda-resting-on-tree-branch-in-england.jpeg" width="400" height="350" alt="Poppy Gitsham" />
+    </section>
+    <br>
+    <!--End section image-->
+
+    <!--start section table-->
+    <section id="table">
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Emails</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Fadlullah Abdusalaam</td>
+                <td>Ja Block Kano Nigeria</td>
+                <td>+2347066720406</td>
+                <td>salamfadilu@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Rayhaan Abdusalaam</td>
+                <td>Ikorodu Lagos Nigeria</td>
+                <td>+2347066738376</td>
+                <td>rayabd@gmail.com</td>
+            </tr>
+             <tr>
+                <td>Firdaos Fadlullah</td>
+                <td>Allen Junction, Ikeja, Nigeria</td>
+                <td>+23480336720406</td>
+                <td>firfad@gmail.com</td>
+            </tr>
+             <tr>
+                <td>Hadizat Musa</td>
+                <td>Otupkpo Kogi Nigeria</td>
+                <td>+2348107030493</td>
+                <td>hadizatabdulsalaam@gmail.com</td>
+            </tr>
+             <tr>
+                <td>Khadijat Muhammad</td>
+                <td>Mai masara Dutse Nigeria</td>
+                <td>+234801820850</td>
+                <td>muhdkhd@gmail.com</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <br>
+ <!--End section table-->
+    <section id="regform">
+        <h3>How to create form in html</h3>
+        <form name ="myform" method="GET" action="/">
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+            <br>
+            <label for="date">Date</label>
+            <input type="date" name="date" required>
+            <br>
+            <label for="country">Country</label>
+            <select name="country">
+                <option value="ng">Nigeria</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ot">Other</option>
+            </select>
+            <br>
+            <section id="radcheck">
+                <label for="radio">Gender</label>
+                <input type="radio" value="male" name="male" checked>
+                <input type="radio" value="female" name="female">
+
+                <label for="checkbox">Veteran</label>
+                <input type="checkbox" value="yes" name="yes" checked>
+                <input type="checkbox" value="no" name="no">
+                <br>
+                <button type="submit" name="submit">Submit</button>
+            </section>
+
+
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy Copyright 2025 PLP Web Development | Learn From Us | 07066720406 | salamfadilu@gmail.com </p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class ="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class ="nav-link" href="olist">Ordered List</a>
+            </li>
+            <li class="nav-item ">
+                <a class ="nav-link" href="ext_img">External Image</a>
+            </li>
+            <li class="nav-item">
+                <a class ="nav-link" href="ext_img">Table</a>
+            </li>
+            <li class="nav-item ">
+                <a class ="nav-link" href="ext_img">Registration Form</a>
+            </li>
+
+        </ul>
+    </nav>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>
